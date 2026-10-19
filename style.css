@@ -504,3 +504,101 @@ a {
     transition: none;
   }
 }
+
+/* Seção compacta */
+.section-tight {
+  padding-top: 40px;
+}
+
+/* Listas nos cards */
+.card-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card-list li + li {
+  margin-top: 0.35rem;
+}
+
+.card-list li::marker {
+  color: var(--cyan);
+}
+
+/* Segmentos */
+.segments {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.segments-label {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-right: 0.25rem;
+}
+
+.chip {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: var(--surface);
+}
+
+/* Portfólio */
+.cards-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link p {
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.card-more {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.badge {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.badge-soon {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.cta-site {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+.cta-site a {
+  color: var(--cyan);
+}
+
+@media (max-width: 640px) {
+  .cards-2 {
+    grid-template-columns: 1fr;
+  }
+}
