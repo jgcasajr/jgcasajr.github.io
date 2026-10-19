@@ -602,3 +602,12 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.chip-link {
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.chip-link:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
